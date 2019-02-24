@@ -2,20 +2,34 @@ defmodule Article do
 
     defstruct name: "", date: "", category: "", slug: ""
 
+    def create(article) do
+        path = article.path
+        parts = path |> String.split("/")
+        file_name = parts |> List.last
+
+        category =  if Enum.count(parts) > 1 do 
+                        parts |> Enum.at(Enum.count(parts) - 2) 
+                    end
+        
+        the_name = fetch_name(article)
+        date = String.slice(file_name, 0, 16)
+        %Article{date: date, name: the_name, category: category, slug: slug(the_name)}
+    end
+
+    def slug(nil) do 
+        ""
+    end
+
     def slug(%Article{name: name}) do
         slug(name)
     end
 
     def slug(name) do
-        if name == nil do
-            ""
-        else 
-            name 
-            |> String.downcase
-            |> replace_all("  ", " ")
-            |> String.replace(" ", "-")
-            |> remove_specials
-        end
+        name 
+        |> String.downcase
+        |> replace_all("  ", " ")
+        |> String.replace(" ", "-")
+        |> remove_specials
     end
 
     def category_slug(%Article{category: category}) do 
@@ -40,22 +54,7 @@ defmodule Article do
     end
 
     defp char_allowed(c) do
-        (c >= "a" and c <= "z") or 
-        c == "-"
-    end
-
-    def create(article) do
-        path = article.path
-        parts = path |> String.split("/")
-        name = parts |> List.last
-
-        category =  if Enum.count(parts) > 1 do 
-                        parts |> Enum.at(Enum.count(parts) - 2) 
-                    end
-        
-        the_name = fetch_name(article)
-        date = String.slice(name, 0, 16)
-        %Article{date: date, name: the_name, category: category, slug: Article.slug(the_name)}
+        (c >= "a" and c <= "z") or (c == "-")
     end
 
     defp fetch_name(article) do 
@@ -72,6 +71,5 @@ defmodule Article do
         else 
             slug
         end
-
     end
 end 

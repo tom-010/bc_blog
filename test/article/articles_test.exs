@@ -65,4 +65,5 @@ defmodule ArticlesTest do
         a = %{ path: "category/2018-10-12 10:22|this-is-an-article.pdf" }
         assert Articles.to_articles([a]) == []
     end
+
 end
