@@ -29,6 +29,7 @@ defmodule Article do
         |> String.downcase
         |> replace_all("  ", " ")
         |> String.replace(" ", "-")
+        |> replace_all("--", "-")
         |> remove_specials
     end
 
@@ -54,7 +55,7 @@ defmodule Article do
     end
 
     defp char_allowed(c) do
-        (c >= "a" and c <= "z") or (c == "-")
+        (c >= "a" and c <= "z") or (c == "-") or (c >= "0" and c <= "9")
     end
 
     defp fetch_name(article) do 
