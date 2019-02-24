@@ -4,6 +4,7 @@ defmodule Articles do
         article 
         |> Enum.filter(fn a -> a.path != "" end)
         |> Enum.filter(fn a -> String.ends_with?(a.path, ".md") end)
+        |> Enum.map(&to_article(&1))
     end
 
     def to_article(article) do
