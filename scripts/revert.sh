@@ -1,1 +1,1 @@
-git checkout HEAD - lib/
+git checkout HEAD -- lib/

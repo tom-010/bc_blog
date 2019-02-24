@@ -3,6 +3,7 @@
 # an inifinity loop
 while true
 do
-	./tcr.sh
-    inotifywait -r -e modify ./lib ./test
+    clear
+    ./tcr.sh
+    inotifywait -r -e modify ./lib ./test > /dev/null 2> /dev/null
 done
