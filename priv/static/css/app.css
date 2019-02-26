@@ -283,3 +283,180 @@ h1, h2, h3, h4, h5, h6 {
     color: rgba(0, 0, 0, 0.54);
     margin-bottom: 0.5em;
 }
+
+/* +++++++++++++++++++ */
+
+.article {
+    padding-left: 11em;
+    padding-right: 11em;
+}
+
+.article p, .article li {
+    font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+    color: rgba(0,0,0,.84);
+    font-size: 1.4em;
+}
+
+.article img {
+    width: 100%;
+    margin-bottom: 1.5em;
+}
+
+.article-info {
+    margin-bottom: 2.5em;
+}
+
+.article-info p {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 0.9em;
+}
+
+.article-info::after {
+    content: " ";
+    display: block; 
+    height: 0; 
+    clear: both;
+}
+
+.article-info .author-thumb {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    float: left;
+    margin-right: 0.8em;
+}
+
+.article-info .article-info-details {
+    float: left;
+}
+
+.article-info .article-info-details p {
+    margin-bottom: 0;
+}
+
+.article-info .article-info-details .meta {
+    color: rgba(0,0,0,.54);
+}
+
+tt {
+    background-color: rgba(0,0,0,.05);
+    padding: 3px 4px;
+}
+
+.article-title {
+    font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+    font-size: 3em;
+}
+
+.article h2, .article h3, .article h4, .article h5, .article h6 {
+    font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
+    font-weight: bold;
+}
+
+.article h2 {
+    font-size: 1.8em;
+    margin-bottom: 0.4em;
+    margin-top: 1.7em;
+}
+
+pre {
+   font-family: Menlo,Monaco,"Courier New",Courier,monospace; 
+   background-color: rgba(0,0,0,.05);
+   color: rgba(0,0,0,.84);
+   padding: 20px;
+   white-space: pre-wrap;
+   border: 0;
+   margin-top: 3em;
+   margin-bottom: 3em;
+}
+
+ol {
+    list-style-position: outside;
+    margin-left: 1.5em;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+}
+
+ol li {
+    margin-bottom: 1em;
+}
+
+a {
+    color: rgba(0,0,0,.84);
+    text-decoration: underline;
+}
+
+.tags {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 2em;
+    padding: 0;
+    font-size: 0.65em;
+}
+
+.tags::after {
+    content: " ";
+    display: block; 
+    height: 0; 
+    clear: both;
+}
+
+.tags li {
+    color: rgba(0,0,0,.68);
+    background: rgba(0,0,0,.05);
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 5px 10px;
+    border-radius: 3px;
+    float: left;
+    margin-right: 0.5em;
+}
+
+.tags li a {
+    text-decoration: none;
+}
+
+.author-info {
+    border-top: 1px solid rgba(0,0,0,.05);
+    margin-top: 2em;
+    padding-top: 1em;
+    margin-bottom: 2.5em;
+}
+
+.author-info p {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 1.2em;
+}
+
+.author-info::after {
+    content: " ";
+    display: block; 
+    height: 0; 
+    clear: both;
+}
+
+.author-info .author-thumb {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    float: left;
+    margin-right: 1em;
+}
+
+.author-info .author-info-details {
+    float: left;
+    width: 80%;
+}
+
+.author-info .author-info-details p {
+    margin-bottom: 0;
+}
+
+.author-info .author-info-details .name {
+    font-weight: bold;
+}
+
+.author-info .author-info-details .bio {
+    font-size: 1em;
+}
