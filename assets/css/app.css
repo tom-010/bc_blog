@@ -327,3 +327,73 @@ a {
 .author-info .author-info-details .bio {
     font-size: 1em;
 }
+
+.article-bottom {
+    background-color: #fafafa;
+    padding-left: 1000px;
+    margin-left: -1000px;
+    padding-right: 1000px;
+    margin-right: -1000px;
+    padding-top: 2em;
+    padding-bottom: 3em;
+}
+.article-bottom::after {
+    content: " ";
+    display: block; 
+    height: 0; 
+    clear: both;
+}
+
+.preview-card {
+    background-color: white;
+    box-shadow: 0 1px 7px rgba(0,0,0,.20);
+    float: left;
+    padding: 0;
+    list-style: none;
+    margin-right: 3%;
+    width: 30%;
+    border-radius: 4px;
+    overflow: hidden;
+    min-height: 320px;
+}
+
+.preview-card a {
+    text-decoration: none;
+}
+
+.preview-card p {
+    padding-top: 1em;
+    margin: 0;
+}
+
+.preview-card .relationship-type  {
+    color: rgba(0,0,0,.54);
+}
+
+.preview-card .article-header {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-top: 0;
+
+}
+
+.preview-card .card-content {
+    padding: 1em;
+    padding-top: 0;
+    padding-bottom: 2em;
+}
+
+#footer-menue {
+    border-top: 1px solid rgba(0,0,0,.05);
+    text-align: center;
+    padding-top: -0.5em;
+}
+
+#footer-menue a {
+    text-decoration: none;
+    color: rgba(0,0,0,.54);
+}
+
+#footer-menue a:hover {
+    color: rgba(0,0,0,.84);
+}

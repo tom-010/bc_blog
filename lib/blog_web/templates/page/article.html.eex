@@ -407,3 +407,31 @@ $ cat test
     </div>
     
 </div>
+<div class="article-bottom">
+    <ul class="preview-items">
+        <li class="preview-card"><a href="#">
+            <img src="https://cdn-images-1.medium.com/fit/c/400/120/1*tkFAvJli20tXxCehZcaEgA.jpeg"/>
+            <div class="card-content">
+                <p class="relationship-type">Related reads</p>
+                <p class="article-header">Four Startup Engineering Killers</p>
+                <p class="article-preview">I cannot verify if my test is worth anything because I never see it red.</p>
+            </div>
+        </a></li>
+        <li class="preview-card"><a href="#">
+            <img src="https://cdn-images-1.medium.com/fit/c/400/120/1*YG5AZUr_DSR0w4gGh7fa8A.jpeg"/>
+            <div class="card-content">
+                <p class="relationship-type">Related reads</p>
+                <p class="article-header">Stop building car boats — tech debt 101</p>
+                <p class="article-preview">Was the opinion that TCR can’t work. But Kent Beck wrote on.</p>
+            </div>
+        </a></li>
+        <li class="preview-card"><a href="#">
+            <img src="https://cdn-images-1.medium.com/fit/c/400/120/1*NNVGFkD-7uOCXHBRdKKbOg.jpeg"/>
+            <div class="card-content">
+                <p class="relationship-type">Related reads</p>
+                <p class="article-header">Transformation towards a Data-driven Company</p>
+                <p class="article-preview">It currently implement a Ray Tracer...</p>
+            </div>
+        </a></li>
+    </ul>
+</div>

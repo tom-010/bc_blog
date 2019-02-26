@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Blog · Phoenix Framework</title>
+    <title>Brutal Coding · Thomas Deniffel</title>
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
   </head>
   <body>
@@ -23,6 +23,13 @@
 
       <%= render @view_module, @view_template, assigns %>
     </main>
+    <footer>
+      <p id="footer-menue">
+        <a href="#">Contact</a> ·
+        <a href="#">About me</a> · 
+        <a href="#">Imprint</a> 
+      </p>
+    </footer>
     <script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
   </body>
 </html>
