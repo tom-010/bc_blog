@@ -13,7 +13,7 @@
 
 <ul class="article-list">
   <li>
-    <h1 class="article-list-title">Thank you for the big effort of writing such an extensive answer.</h1>
+    <a href="/article/thank-you-for-the-big-effort-of-writing-such-an-extensive-answer_"><h1 class="article-list-title">Thank you for the big effort of writing such an extensive answer.</h1></a>
     <p class="article-list-details">Last edited 2 days ago · 1 min read (34 words) so far</p>
   </li>
   <li>
@@ -61,7 +61,7 @@
 <hr>
 <ul>
 <%= for a <- @articles do %>
-  <li><%= a.name %> (<%= a.date %>)</li>
+  <li><%= a.name %> (<%= a.date %>): <%= a.slug %></li>
 <% end %>
 </ul>
 
