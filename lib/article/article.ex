@@ -1,6 +1,6 @@
 defmodule Article do
 
-    defstruct name: "", date: "", category: "", slug: "", content: ""
+    defstruct name: "", date: "", category: "", slug: "", content: "", html: ""
 
     def create(article) do
         path = article.path
@@ -13,12 +13,16 @@ defmodule Article do
         
         the_name = fetch_name(article)
         date = String.slice(file_name, 0, 16)
+
+        content = get_content(article)
+
         %Article{
             date: date, 
             name: the_name, 
             category: category, 
             slug: slug(the_name),
-            content: get_content(article)
+            content: content,
+            html: if content != "" do "<p>#{content}</p>" else "" end
         }
     end
 

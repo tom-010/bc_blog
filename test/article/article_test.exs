@@ -58,4 +58,20 @@ defmodule ArticleTest do
         assert a.content == "third line" 
     end
 
+    test "html set, if content is set" do
+        a = Article.create(%{
+            path: "2018-10-12 10:22|this-is-an-article.md",
+            content: "first line\n====\nthird line"
+        })
+        assert a.html =~ "<p>third line</p>"
+    end
+
+    test "no content, no html" do
+        a = Article.create(%{
+            path: "2018-10-12 10:22|this-is-an-article.md",
+            content: "first line\n===="
+        })
+        assert a.html == ""
+    end
+
 end

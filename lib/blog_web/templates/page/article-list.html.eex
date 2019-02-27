@@ -62,6 +62,6 @@
 <ul>
 <%= for a <- @articles do %>
   <li><%= a.name %> (<%= a.date %>)</li>
-<%= end %>
+<% end %>
 </ul>
 
