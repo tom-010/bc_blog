@@ -22,7 +22,7 @@ defmodule Article do
             category: category, 
             slug: slug(the_name),
             content: content,
-            html: if content != "" do "<p>#{content}</p>" else "" end
+            html: MarkdownHtmlConverter.convert(content)
         }
     end
 

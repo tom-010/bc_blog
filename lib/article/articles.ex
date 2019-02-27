@@ -8,18 +8,7 @@ defmodule Articles do
     end
 
     def to_article(article) do
-        path = article.path
-        parts = path |> String.split("/")
-        name = parts |> List.last
-
-        category =  if Enum.count(parts) > 1 do 
-                        parts |> Enum.at(Enum.count(parts) - 2) 
-                    end
-        
-        l = String.length(name)
-        the_name = fetch_name(article)
-        date = String.slice(name, 0, 16)
-        %Article{date: date, name: the_name, category: category, slug: Article.slug(the_name)}
+        Article.create(article)
     end
 
     defp fetch_name(article) do 

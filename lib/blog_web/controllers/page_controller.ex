@@ -10,7 +10,13 @@ defmodule BlogWeb.PageController do
     render(conn, "index.html", articles: articles)
   end
 
-  def article(conn, _params) do 
-    render(conn, "article.html")
+  def article(conn, %{"slug" => slug}) do 
+    [article | _] =
+    "articles"
+    |> ArticleReader.read()
+    |> Articles.to_articles()
+    |> Enum.filter(& slug == &1.slug)
+
+    render(conn, "article.html", article: article)
   end
 end

@@ -12,50 +12,15 @@
 </ul>
 
 <ul class="article-list">
+  <%= for a <- @articles do %>
   <li>
-    <a href="/article/thank-you-for-the-big-effort-of-writing-such-an-extensive-answer_"><h1 class="article-list-title">Thank you for the big effort of writing such an extensive answer.</h1></a>
+    <a href="/article/<%= a.slug %>">
+      <h1 class="article-list-title"><%= a.name %></h1>
+    </a>
+    <p class="article-list-preview">Some preview text</p>
     <p class="article-list-details">Last edited 2 days ago · 1 min read (34 words) so far</p>
   </li>
-  <li>
-    <h1 class="article-list-title">Multi-Cycle TCR</h1>
-    <p class="article-list-preview"></p>
-    <p class="article-list-details">Last edited 3 days ago · 1 min read (3 words) so far</p>
-  </li>
-  <li>
-    <h1 class="article-list-title">TCR Q&A</h1>
-    <p class="article-list-preview">I always get the same questions, when I introduce TCR. Here are some (most?) of them. It is a good practice to answer them in written form…</p>
-    <p class="article-list-details">Last edited 4 days ago · 1 min read (63 words) so far</p>
-  </li>
-  <li>
-    <h1 class="article-list-title">Fake-Bot prototype</h1>
-    <p class="article-list-preview">This article is a collection of scenarios for Fake-Bot and how to solve them (possibly).</p>
-    <p class="article-list-details">Last edited 6 days ago · 1 min read (73 words) so far</p>
-  </li>
-  <li>
-    <h1 class="article-list-title">Log-Based Development</h1>
-    <p class="article-list-preview">Log-Based Development means that you write a “test” with a series of logs of an integrated system with different modules where each module…</p>
-    <p class="article-list-details">Last edited 8 days ago · 1 min read (69 words) so far</p>
-  </li>
-  <li>
-    <h1 class="article-list-title">Requirements to a Language for Small Devices</h1>
-    <p class="article-list-preview">Requirements</p>
-    <p class="article-list-details">Last edited 12 days ago · 1 min read (48 words) so far</p>
-  </li>
-  <li>
-    <h1 class="article-list-title">30 days without sugar</h1>
-    <p class="article-list-preview">As I read in some magazine of my girlfriend, some random person tried to do 30 days without sugar. I am no fan of all the methods, but this…</p>
-    <p class="article-list-details">Last edited 27 days ago · 1 min read (113 words) so far</p>
-  </li>
-  <li>
-    <h1 class="article-list-title">A custom IDE based on VS Code</h1>
-    <p class="article-list-preview">This post shows, how I create my IDE, based VS Code.</p>
-    <p class="article-list-details">Last edited about 1 month ago · 2 min read (502 words) so far</p>
-  </li>
-  <li>
-    <h1 class="article-list-title">1-n-m-Development</h1>
-    <p class="article-list-preview">Because of today's tools and practices, a TDD-Programmer takes the role of the tester, the feature-developer, and the refactoring guy.</p>
-    <p class="article-list-details">Last edited about 1 month ago · 1 min read (86 words) so far</p>
-  </li>
+  <% end %>
 </ul>
 
 <hr>
