@@ -1,6 +1,6 @@
 defmodule Article do
 
-    defstruct name: "", date: "", category: "", slug: ""
+    defstruct name: "", date: "", category: "", slug: "", content: ""
 
     def create(article) do
         path = article.path
@@ -13,7 +13,26 @@ defmodule Article do
         
         the_name = fetch_name(article)
         date = String.slice(file_name, 0, 16)
-        %Article{date: date, name: the_name, category: category, slug: slug(the_name)}
+        %Article{
+            date: date, 
+            name: the_name, 
+            category: category, 
+            slug: slug(the_name),
+            content: get_content(article)
+        }
+    end
+
+    defp get_content(%{content: content}) do 
+        lines = content |> String.split("\n")
+        c = lines |> Enum.count 
+
+        lines
+        |> Enum.slice(2..c)
+        |> Enum.join("/n")
+    end
+
+    defp get_content(_article_data) do # no content-key
+        ""
     end
 
     def slug(nil) do 

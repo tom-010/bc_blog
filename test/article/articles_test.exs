@@ -29,38 +29,6 @@ defmodule ArticlesTest do
         assert Article.category_slug(a) == "category"
     end
 
-    test "article has no content, slug is name" do 
-        a = Article.create(%{ path: "2018-10-12 10:22|this-is-an-article.md" })
-        assert a.date == "2018-10-12 10:22"
-        assert Article.slug(a) == "this-is-an-article"
-        assert Article.category_slug(a) == ""
-        assert a.name == "this-is-an-article"
-    end
-
-    test "article one line content, first line is name" do
-        a = Article.create(%{ 
-                path: "2018-10-12 10:22|this-is-an-article.md",
-                content: "first line"
-            })
-        assert a.name == "first line"
-    end
-
-    test "article multiple line content, first line is name" do
-        a = Article.create(%{ 
-                path: "2018-10-12 10:22|this-is-an-article.md",
-                content: "first line\nsecond line\n"
-            })
-        assert a.name == "first line"
-    end
-
-    test "article slug is slugged name" do 
-        a = Article.create(%{ 
-            path: "2018-10-12 10:22|this-is-an-article.md",
-            content: "first line\nsecond line\n"
-        })
-        assert a.slug == "first-line"
-    end
-
     test "non-markdown-files are not listed" do 
         a = %{ path: "category/2018-10-12 10:22|this-is-an-article.pdf" }
         assert Articles.to_articles([a]) == []

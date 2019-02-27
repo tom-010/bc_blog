@@ -2,43 +2,60 @@ defmodule ArticleTest do
  
     use ExUnit.Case
 
-    test "empty slug" do
-        assert Article.slug(nil) == ""
-        assert Article.slug("") == ""
+    test "article has no content, slug is name" do 
+        a = Article.create(%{ path: "2018-10-12 10:22|this-is-an-article.md" })
+        assert a.date == "2018-10-12 10:22"
+        assert Article.slug(a) == "this-is-an-article"
+        assert Article.category_slug(a) == ""
+        assert a.name == "this-is-an-article"
     end
 
-    test "identity slug" do 
-        assert Article.slug("tom") == "tom"
-        assert Article.slug("tom-deniffel") == "tom-deniffel"
+    test "article one line content, first line is name" do
+        a = Article.create(%{ 
+                path: "2018-10-12 10:22|this-is-an-article.md",
+                content: "first line"
+            })
+        assert a.name == "first line"
     end
 
-    test "slug lowercases" do 
-        assert Article.slug("Tom")  == "tom"
-        assert Article.slug("TOM")  == "tom"
+    test "article multiple line content, first line is name" do
+        a = Article.create(%{ 
+                path: "2018-10-12 10:22|this-is-an-article.md",
+                content: "first line\nsecond line\n"
+            })
+        assert a.name == "first line"
     end
 
-    test "numbers are not deleted" do 
-        assert Article.slug("T0m") == "t0m"
+    test "article slug is slugged name" do 
+        a = Article.create(%{ 
+            path: "2018-10-12 10:22|this-is-an-article.md",
+            content: "first line\nsecond line\n"
+        })
+        assert a.slug == "first-line"
     end
 
-    test "no two minus in a row" do 
-        assert Article.slug("test - 0") == "test-0"
+    test "article-file has contet, article-content is not empty" do 
+        a = Article.create(%{
+            path: "2018-10-12 10:22|this-is-an-article.md",
+            content: "first line\n====\nThird-line"
+        })
+        assert a.content != ""
     end
 
-    # Category 1 - title
-
-    test "white-spaces are replaced by minus" do
-        assert Article.slug("tom deniffel") == "tom-deniffel"
-        assert Article.slug("tom  deniffel") == "tom-deniffel"
-        assert Article.slug("tom     deniffel") == "tom-deniffel"
+    test "article-file contains only header, content is empty" do 
+        a = Article.create(%{
+            path: "2018-10-12 10:22|this-is-an-article.md",
+            content: "first line\n===="
+        })
+        assert a.content == ""
+    end
+    
+    test "content: first two lines are cut away, as they are the title" do
+        a = Article.create(%{
+            path: "2018-10-12 10:22|this-is-an-article.md",
+            content: "first line\n====\nthird line"
+        })
+        assert a.content == "third line" 
     end
 
-    test "special characters are replaced by underscore" do
-        assert Article.slug("tom/deniffel") == "tom_deniffel"
-        assert Article.slug("tom^deniffel") == "tom_deniffel"
-        assert Article.slug("tom$deniffel") == "tom_deniffel"
-        assert Article.slug("tom-deniffel") == "tom-deniffel"
-        assert Article.slug("tom\ndeniffel") == "tom_deniffel"
-        assert Article.slug("tom\tdeniffel") == "tom_deniffel"
-    end
 end

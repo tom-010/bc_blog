@@ -6,7 +6,6 @@ defmodule BlogWeb.PageController do
     "articles"
     |> ArticleReader.read()
     |> Articles.to_articles()
-    |> IO.inspect()
 
     render(conn, "index.html", articles: articles)
   end
