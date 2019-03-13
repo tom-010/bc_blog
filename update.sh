@@ -1,3 +1,4 @@
+./update_required.sh || exit 0
 git fetch origin
 #rm * -rf
 git reset --hard origin/master
