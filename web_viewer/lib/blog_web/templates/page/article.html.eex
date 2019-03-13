@@ -1,5 +1,5 @@
 <div class="article">
-    <h1 class="article-title"><%= @article.name %></h1>
+    <h1 class="article-title"><%= @article.title %></h1>
 
     <div class="article-info">
         <img class="author-thumb" src="https://cdn-images-1.medium.com/fit/c/50/50/1*YJrv7h2JQjn5lI53rpzfcw.jpeg" />

@@ -15,7 +15,7 @@
   <%= for a <- @articles do %>
   <li>
     <a href="/article/<%= a.slug %>">
-      <h1 class="article-list-title"><%= a.name %></h1>
+      <h1 class="article-list-title"><%= a.title %></h1>
     </a>
     <p class="article-list-preview">Some preview text</p>
     <p class="article-list-details">Last edited 2 days ago · 1 min read (34 words) so far</p>
