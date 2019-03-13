@@ -1,5 +1,5 @@
 git fetch origin
-rm * -rf
+#rm * -rf
 git reset --hard origin/master
 cd web_viewer/
 mix deps.get
