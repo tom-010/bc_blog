@@ -1,0 +1,20 @@
+[error] `inotify-tools` is needed to run `file_system` for your system, check https://github.com/rvoicilas/inotify-tools/wiki for more information about how to install it. If it's already installed but not be found, appoint executable file with `config.exs` or `FILESYSTEM_FSINOTIFY_EXECUTABLE_FILE` env.
+[warn] Could not start Phoenix live-reload because we cannot listen to the file system.
+You don't need to worry! This is an optional feature used during development to
+refresh your browser when you save files and it does not affect production.
+
+[info] Running BlogWeb.Endpoint with cowboy 2.6.1 at http://localhost:4000
+[error] Could not start watcher because "node" is not available. Your Phoenix application is still running, however assets won't be compiled. You may fix this by installing "node" and then running "cd assets && npm install".
+[info] Replied phoenix:live_reload :error
+[info] Replied phoenix:live_reload :error
+[info] Replied phoenix:live_reload :error
+[info] Replied phoenix:live_reload :error
+[info] Replied phoenix:live_reload :error
+[info] Replied phoenix:live_reload :error
+[info] Replied phoenix:live_reload :error
+[info] Replied phoenix:live_reload :error
+[info] Replied phoenix:live_reload :error
+[info] Replied phoenix:live_reload :error
+[info] Replied phoenix:live_reload :error
+[info] SIGTERM received - shutting down
+
