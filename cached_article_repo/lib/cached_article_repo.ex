@@ -1,17 +1,7 @@
 defmodule CachedArticleRepo do
-  @moduledoc """
-  Documentation for CachedArticleRepo.
-  """
-
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> CachedArticleRepo.hello()
-      :world
-
-  """
+  
+  @path_to_posts "../blog_post_res"
+  
   def hello do
     :world
   end
