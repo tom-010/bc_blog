@@ -109,3 +109,29 @@ refresh your browser when you save files and it does not affect production.
   Pipelines: [:browser]
 [info] Sent 200 in 1354ms
 [info] Replied phoenix:live_reload :error
+==> gettext
+Compiling 1 file (.erl)
+Compiling 20 files (.ex)
+Generated gettext app
+===> Compiling ranch
+==> jason
+Compiling 8 files (.ex)
+Generated jason app
+==> earmark
+Compiling 3 files (.erl)
+Compiling 25 files (.ex)
+Generated earmark app
+==> article
+Compiling 3 files (.ex)
+Generated article app
+==> phoenix_pubsub
+Compiling 13 files (.ex)
+Generated phoenix_pubsub app
+==> fs_article_reader
+Compiling 3 files (.ex)
+warning: default arguments in list_file_recursivly/1 are never used
+  lib/article_reader.ex:29
+
+Generated fs_article_reader app
+===> Compiling cowlib
+===> Compiling cowboy
