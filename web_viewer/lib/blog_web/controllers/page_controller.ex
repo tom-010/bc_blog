@@ -23,6 +23,6 @@ defmodule BlogWeb.PageController do
     |> Enum.map(&HtmlArticle.from_article/1)
     |> Enum.filter(& slug == &1.slug)
 
-    render(conn, "article.html", article: article, html_content: MarkdownHtmlConverter.convert(article.content))
+    render(conn, "article.html", article: article)
   end
 end

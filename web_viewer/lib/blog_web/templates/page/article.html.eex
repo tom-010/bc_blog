@@ -9,7 +9,7 @@
         </div>
     </div>
 
-    <%= raw(@html_content) %>
+    <%= raw(@article.content) %>
     
     <div class="article-outro">
         <ul class="tags">
