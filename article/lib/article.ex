@@ -18,7 +18,7 @@ defmodule Article do
     |> Enum.filter(& not String.starts_with?(&1, "|---") and not String.starts_with?(&1, "|info"))
     |> Enum.map(fn line -> 
         l = String.split(line, "|")
-        {Enum.at(l, 1), Enum.at(l, 2)}
+        {Enum.at(l, 1) |> String.trim, Enum.at(l, 2) |> String.trim}
       end) 
     |> Map.new
   end

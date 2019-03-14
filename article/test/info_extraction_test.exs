@@ -238,4 +238,14 @@ defmodule InfoExtraction do
         """) 
             == ""
     end
+
+    test "keys and values are trimmed" do 
+        # note the spaces in the info table
+        assert Article.extract_info("""
+        |info  |                |
+        |------|----------------|
+        |   key1|   val 1! |
+        |key  2  |  val  2    |
+        """) == %{"key1" => "val 1!", "key  2" => "val  2"}
+    end
 end
