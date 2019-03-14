@@ -39,7 +39,7 @@ defmodule HtmlArticleTest do
       "key2" => "val2",
       "key3" => "val3"
     }
-    
+    assert HtmlArticle.from_article(%{@valid_article | info: info}).info == info
   end
 
 end
