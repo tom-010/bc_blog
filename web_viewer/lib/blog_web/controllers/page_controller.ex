@@ -5,22 +5,20 @@ defmodule BlogWeb.PageController do
     render(conn, "index.html")
   end
 
-  def articles(conn, _params) do
-    articles =
+  defp get_articles() do 
     "articles"
     |> ArticleReader.read()
     |> Enum.map(&Article.from_article_file/1)
     |> Enum.map(&HtmlArticle.from_article/1)
+  end
 
-    render(conn, "articles.html", articles: articles)
+  def articles(conn, _params) do
+    render(conn, "articles.html", articles: get_articles())
   end
 
   def article(conn, %{"slug" => slug}) do 
     [article | _] =
-    "articles"
-    |> ArticleReader.read()
-    |> Enum.map(&Article.from_article_file/1)
-    |> Enum.map(&HtmlArticle.from_article/1)
+    get_articles()
     |> Enum.filter(& slug == &1.slug)
 
     render(conn, "article.html", article: article)
