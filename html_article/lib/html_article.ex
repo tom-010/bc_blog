@@ -1,0 +1,3 @@
+defmodule HtmlArticle do
+
+end
