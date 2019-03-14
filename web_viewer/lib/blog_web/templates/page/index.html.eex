@@ -1,2 +1,1 @@
 <img id="bc-landmap"src="<%= Routes.static_path(@conn, "/images/landmap.png") %>" alt="Phoenix Framework Logo"/>
-<p>Made by Thomas Deniffel</p>
