@@ -8,7 +8,7 @@ for dir in * ; do
     echo ===============================================
     echo "Testing $dir"
     echo ===============================================
-    mix test || e=1
+    test -e mix.exs && (mix test || e=1)
     cd ..
   fi
 done
