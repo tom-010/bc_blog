@@ -20,7 +20,11 @@ defmodule HtmlArticleTest do
   end
 
   test "html article has html as content, not markdown as the article" do 
-    assert HtmlArticle.from_article(@valid_article).content == "<p>content</p>"
+    assert HtmlArticle.from_article(@valid_article).content =~ "<p>content</p>"
+  end
+
+  test "author is empty, if info is empty" do 
+    # assert HtmlArticle.from_article(%{@valid_article | info: %{}}).author == ""
   end
 
 end

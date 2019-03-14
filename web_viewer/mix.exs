@@ -39,7 +39,7 @@ defmodule Blog.MixProject do
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
-      {:earmark, "~> 1.3"},
+      {:html_article, path: "../html_article"}
       {:article,  path: "../article"},
       {:fs_article_reader, path: "../fs_article_reader"}
     ]
