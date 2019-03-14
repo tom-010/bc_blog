@@ -9,7 +9,7 @@ defmodule HtmlArticleTest do
         path:     "path",
         category: "category",
         content:  "content",
-        info:     %{"author" => "author"}
+        info:     %{}
     }
   
   test "create from article uses id, title, category and slug" do 
