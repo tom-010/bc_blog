@@ -1,8 +1,8 @@
 defmodule HtmlArticle do
 
   def from_article(article) do 
-    r = %{article | 
+    %{article | 
       content: MarkdownHtmlConverter.convert(article.content)}
-    r = Map.put(r, :author, "")
+    |> Map.put(:author, "")
   end
 end
