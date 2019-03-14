@@ -23,12 +23,13 @@ defmodule HtmlArticleTest do
     assert HtmlArticle.from_article(@valid_article).content =~ "<p>content</p>"
   end
 
-  test "author is empty, if info is empty" do 
+  test "author is taken from info, if present" do 
     assert HtmlArticle.from_article(%{@valid_article | info: %{}}).author == ""
+    assert HtmlArticle.from_article(%{@valid_article | info: %{"author" => "Thomas Deniffel"}}).author == "Thomas Deniffel"
   end
 
-  test "author is taken from info, if present" do 
-    assert HtmlArticle.from_article(%{@valid_article | info: %{"author" => "Thomas Deniffel"}}).author == "Thomas Deniffel"
+  test "date is taken from info, if present" do 
+
   end
 
 end
