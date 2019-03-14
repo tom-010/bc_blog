@@ -9,7 +9,7 @@ defmodule HtmlArticleTest do
         path:     "path",
         category: "category",
         content:  "content",
-        info:     %{}
+        info:     %{"author" => "Thomas Deniffel"}
     }
   
   test "create from article uses id, title, category and slug" do 
@@ -28,7 +28,7 @@ defmodule HtmlArticleTest do
   end
 
   test "author is taken from info, if present" do 
-    #assert HtmlArticle.from_article(%{@valid_article | info: %{author: "Thomas Deniffel"}}).author == "Thomas Deniffel"
+    assert HtmlArticle.from_article(%{@valid_article | info: %{"author" => "Thomas Deniffel"}}).author == "Thomas Deniffel"
   end
 
 end

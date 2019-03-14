@@ -8,8 +8,8 @@ defmodule HtmlArticle do
   end
 
   def get_info_item(article, key) do 
-    if Map.has_key?(article, key) do 
-      Map.get(article, key) 
+    if Map.has_key?(article.info, key) do 
+      Map.get(article.info, key) 
     else 
       ""
     end
