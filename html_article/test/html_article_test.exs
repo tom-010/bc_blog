@@ -33,4 +33,13 @@ defmodule HtmlArticleTest do
     assert HtmlArticle.from_article(%{@valid_article | info: %{"date" => "date"}}).date == "date"
   end
 
+  test "info is also present in html-article" do 
+    info = %{
+      "key1" => "val1", 
+      "key2" => "val2",
+      "key3" => "val3"
+    }
+    
+  end
+
 end
