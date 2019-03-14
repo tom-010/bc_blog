@@ -10,14 +10,14 @@ defmodule BlogWeb.PageControllerTest do
     conn = get(conn, "/articles")
     assert_articles(fn article -> 
       assert html_response(conn, 200) =~ "href=\"/article/#{article.slug}\""
-      assert html_response(conn, 200) =~ article.name
+      assert html_response(conn, 200) =~ article.title
     end)
   end
 
   defp articles() do 
     "articles"
     |> ArticleReader.read()
-    |> Articles.to_articles()
+    |> Enum.map(&Article.from_article_file/1)
   end
 
   defp assert_articles(assert_fn) do
@@ -29,7 +29,7 @@ defmodule BlogWeb.PageControllerTest do
   test "links to articles does work", %{conn: conn} do 
     assert_articles(fn article -> 
       article_conn = get(conn, "/article/#{article.slug}")
-      assert html_response(article_conn, 200) =~ article.name
+      assert html_response(article_conn, 200) =~ article.title
     end)
   end
 end
