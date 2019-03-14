@@ -5,7 +5,7 @@
         <img class="author-thumb" src="https://cdn-images-1.medium.com/fit/c/50/50/1*YJrv7h2JQjn5lI53rpzfcw.jpeg" />
         <div class="article-info-details">
             <p class="name"><%= @article.author %></p>
-            <p class="meta">Nov 14, 2018 · 13 min read</p>
+            <p class="meta"><%= @article.date %> · 13 min read</p>
         </div>
     </div>
 
