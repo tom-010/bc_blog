@@ -10,10 +10,7 @@ defmodule BlogWeb.PageController do
   end
 
   def article(conn, %{"slug" => slug}) do 
-    [article | _] =
-      get_articles()
-      |> Enum.filter(& slug == &1.slug)
-
+    [article | _] = get_articles() |> Enum.filter(& slug == &1.slug)
     render(conn, "article.html", article: article)
   end
 
