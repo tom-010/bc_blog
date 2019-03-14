@@ -1,6 +1,8 @@
 defmodule BlogWeb.PageController do
   use BlogWeb, :controller
 
+  @path_to_posts "../blog_post_res"
+
   def index(conn, _params) do
     render(conn, "index.html")
   end
@@ -15,7 +17,7 @@ defmodule BlogWeb.PageController do
   end
 
   defp get_articles() do 
-    "articles"
+    @path_to_posts
     |> ArticleReader.read()
     |> Enum.map(&Article.from_article_file/1)
     |> Enum.map(&HtmlArticle.from_article/1)
