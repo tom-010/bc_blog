@@ -29,7 +29,8 @@ defmodule HtmlArticleTest do
   end
 
   test "date is taken from info, if present" do 
-
+    assert HtmlArticle.from_article(%{@valid_article | info: %{}}).date == ""
+    assert HtmlArticle.from_article(%{@valid_article | info: %{"date" => "date"}}).date == "date"
   end
 
 end
