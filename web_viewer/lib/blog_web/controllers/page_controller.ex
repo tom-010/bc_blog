@@ -10,6 +10,7 @@ defmodule BlogWeb.PageController do
     "articles"
     |> ArticleReader.read()
     |> Enum.map(&Article.from_article_file/1)
+    |> Enum.map(&HtmlArticle.from_article/1)
 
     render(conn, "articles.html", articles: articles)
   end
@@ -19,6 +20,7 @@ defmodule BlogWeb.PageController do
     "articles"
     |> ArticleReader.read()
     |> Enum.map(&Article.from_article_file/1)
+    |> Enum.map(&HtmlArticle.from_article/1)
     |> Enum.filter(& slug == &1.slug)
 
     render(conn, "article.html", article: article, html_content: MarkdownHtmlConverter.convert(article.content))
