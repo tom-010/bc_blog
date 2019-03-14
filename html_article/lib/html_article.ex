@@ -5,4 +5,8 @@ defmodule HtmlArticle do
       content: MarkdownHtmlConverter.convert(article.content)}
     |> Map.put(:author, "")
   end
+
+  def get_info_item(article, key) do 
+    
+  end
 end
