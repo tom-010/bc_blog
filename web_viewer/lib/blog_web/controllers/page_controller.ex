@@ -1,8 +1,6 @@
 defmodule BlogWeb.PageController do
   use BlogWeb, :controller
 
-  @path_to_posts "../blog_post_res"
-
   def index(conn, _params) do
     render(conn, "index.html")
   end
