@@ -24,7 +24,7 @@ defmodule HtmlArticleTest do
   end
 
   test "author is empty, if info is empty" do 
-    # assert HtmlArticle.from_article(%{@valid_article | info: %{}}).author == ""
+    assert HtmlArticle.from_article(%{@valid_article | info: %{}}).author == ""
   end
 
 end
