@@ -7,6 +7,10 @@ defmodule CachedArticleRepo.Cache do
     def get() do 
         []
     end
+
+    def reset() do 
+
+    end
     
 
 end
