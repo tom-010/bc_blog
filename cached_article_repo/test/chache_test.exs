@@ -11,4 +11,8 @@ defmodule CachedArticleRepo.CacheTest do
         assert CachedArticleRepo.Cache.get() == [] 
     end
 
+    test "put and get returns identity" do 
+
+    end
+
 end
