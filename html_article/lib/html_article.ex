@@ -3,7 +3,6 @@ defmodule HtmlArticle do
   def from_article(article) do 
     %{article | 
       content: MarkdownHtmlConverter.convert(article.content)}
-    |> IO.inspect
     |> Map.put(:author, get_info_item(article, "author"))
     |> Map.put(:date, get_info_item(article, "date"))
   end

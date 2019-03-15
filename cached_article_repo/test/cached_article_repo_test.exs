@@ -54,6 +54,16 @@ defmodule CachedArticleRepoTest do
     assert Enum.at(new_articles, 0).content =~ "new content"
   end 
 
+  test "clear removes all artilces" do 
+    create_article("1")
+    create_article("2")
+    create_article("3")
+    CachedArticleRepo.refresh()
+    assert CachedArticleRepo.get_articles() |> Enum.count > 0
+    CachedArticleRepo.clear()
+    assert CachedArticleRepo.get_articles() |> Enum.count == 0
+  end
+
   defp update_aricle(title, content) do 
     create_article(title, content);
   end
