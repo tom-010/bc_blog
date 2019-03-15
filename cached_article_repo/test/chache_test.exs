@@ -3,7 +3,7 @@ defmodule CachedArticleRepo.CacheTest do
 
     setup do
         CachedArticleRepo.Cache.start_link()
-        
+        on_exit fn -> CachedArticleRepo.Cache.reset() end
         :ok 
     end
 
