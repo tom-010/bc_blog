@@ -3,6 +3,7 @@ defmodule CachedArticleRepo.CacheTest do
 
     setup do
         CachedArticleRepo.Cache.start_link()
+        
         :ok 
     end
 
