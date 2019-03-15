@@ -12,7 +12,14 @@ defmodule CachedArticleRepo.CacheTest do
     end
 
     test "put and get returns identity" do 
+        CachedArticleRepo.Cache.put("test")
+        assert CachedArticleRepo.Cache.get() == "test"
+    end
 
+    test "reset clears cache" do 
+        CachedArticleRepo.Cache.put("test")
+        CachedArticleRepo.Cache.reset()
+        assert CachedArticleRepo.Cache.get() == [] 
     end
 
 end
