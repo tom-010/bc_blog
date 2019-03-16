@@ -18,6 +18,7 @@ defmodule Blog.Application do
     # for other strategies and supported options
     opts = [strategy: :one_for_one, name: Blog.Supervisor]
     Supervisor.start_link(children, opts)
+    CachedArticleRepo.start_link()
   end
 
   # Tell Phoenix to update the endpoint configuration
