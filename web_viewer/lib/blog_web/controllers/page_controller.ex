@@ -15,6 +15,7 @@ defmodule BlogWeb.PageController do
   end
 
   defp get_articles() do 
+    CachedArticleRepo.refresh()
     CachedArticleRepo.get_articles()
   end
 

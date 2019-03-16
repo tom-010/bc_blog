@@ -6,7 +6,7 @@ defmodule E2e.MixProject do
       app: :e2e,
       version: "0.1.0",
       elixir: "~> 1.8",
-      deps: []
+      deps: [{:httpoison, "~> 1.5"}]
     ]
   end
 

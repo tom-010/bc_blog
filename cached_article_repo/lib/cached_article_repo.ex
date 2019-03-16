@@ -20,6 +20,7 @@ defmodule CachedArticleRepo do
 
   defp read_articles() do 
     with_default(System.get_env("ARTICLE_PATH"), @blog_post_default)
+    |> IO.inspect
     |> ArticleReader.read()
     |> Enum.map(&Article.from_article_file/1)
     |> Enum.map(&HtmlArticle.from_article/1)
