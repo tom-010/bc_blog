@@ -1,0 +1,9 @@
+<form method="POST" action="/save">
+    <input type="test" name="title" placeholder="Title" class="input-title" value="<%= @title %>"/>
+    <textarea name="content"><%= @content %></textarea>
+    <input type="hidden" value="<%= @csrf %>" name="_csrf_token"/>
+    <button>Save</button>
+</form>
+<script>
+    var easyMDE = new EasyMDE();
+</script>

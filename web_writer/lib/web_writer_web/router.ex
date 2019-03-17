@@ -20,7 +20,7 @@ defmodule WebWriterWeb.Router do
     get "/new", PageController, :new 
     post "/save", PageController, :save 
     put "/save", PageController, :save
-    get "/update", PageController, :update
+    get "/update/:title", PageController, :update
   end
 
   # Other scopes may use custom stacks.
