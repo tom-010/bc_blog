@@ -7,7 +7,7 @@ defmodule E2e.ReadingTest do
         create_test_dir()
         on_exit fn -> 
             kill()
-            # remove_test_dir()
+            remove_test_dir()
         end
     end
 
