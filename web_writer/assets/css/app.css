@@ -408,3 +408,19 @@ a {
 #bc-landmap {
     width: 100%;
 }
+
+/* *********** */
+
+.fa {
+    color: black;
+}
+
+.input-title {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+    margin-bottom: 1em;
+    font-size: 2em;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    width: 100%;
+    padding-bottom: 0.3em;
+}

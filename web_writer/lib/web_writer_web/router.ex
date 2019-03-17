@@ -17,6 +17,10 @@ defmodule WebWriterWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    get "/new", PageController, :new 
+    post "/save", PageController, :save 
+    put "/save", PageController, :save
+    get "/update", PageController, :update
   end
 
   # Other scopes may use custom stacks.
