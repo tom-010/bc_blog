@@ -63,6 +63,36 @@ defmodule CachedArticleRepoTest do
     CachedArticleRepo.clear()
     assert CachedArticleRepo.get_articles() |> Enum.count == 0
   end
+  
+  test "creating a new article without category" do 
+    CachedArticleRepo.save("title", "content")
+    assert File.read!("#{@test_dir}/title.md") == 
+    """
+    title
+    =====
+
+    content
+    """
+  end 
+
+  test "creted article appears in all_articles" do 
+    CachedArticleRepo.refresh()
+    CachedArticleRepo.save("title", "content")
+    
+    assert Enum.at(CachedArticleRepo.get_articles, 0).title == "title"
+  end
+
+  test "saving article, that already exists just overwrites it" do 
+    CachedArticleRepo.save("title", "content")
+    CachedArticleRepo.save("title", "content2")
+    assert Enum.at(CachedArticleRepo.get_articles, 0).content =~ "content2"
+  end 
+
+  test "after overwriting, the updated article appears in the list" do 
+    CachedArticleRepo.save("title", "content")
+    CachedArticleRepo.save("title", "content2")
+    assert Enum.at(CachedArticleRepo.get_articles, 0).content =~ "content2"
+  end 
 
   defp update_aricle(title, content) do 
     create_article(title, content);
@@ -73,7 +103,11 @@ defmodule CachedArticleRepoTest do
   end
 
   defp create_article(title, content) do 
-    File.write("#{@test_dir}/category1/#{title}.md", """
+    File.write("#{@test_dir}/category1/#{title}.md", generate_article(title, content))
+  end
+
+  defp generate_article(title, content) do 
+    """
     #{title}
     ========
 
@@ -85,8 +119,8 @@ defmodule CachedArticleRepoTest do
     |tags  |tag1,tag2      |
 
     #{content}
-    """)
-  end
+    """
+  end 
 
   defp prepare_dirs() do 
     File.mkdir("#{@test_dir}")
