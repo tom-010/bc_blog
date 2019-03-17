@@ -13,7 +13,7 @@ defmodule WebWriterWeb.PageController do
     CachedArticleRepo.start_link
     CachedArticleRepo.refresh
     [article | _] = CachedArticleRepo.get_articles |> Enum.filter(& &1.title == title)
-    render(conn, "update.html", csrf: get_csrf_token(), title: article.title, content: File.read!(article.path))
+    render(conn, "update.html", csrf: get_csrf_token(), title: article.title, content: File.read!(article.path) |> String.split("\n") |> Enum.slice(3..-1) |> Enum.join("\n"))
   end 
 
   def save(conn, %{"content" => content, "title" => title} = params) do
