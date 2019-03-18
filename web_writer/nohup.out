@@ -1,0 +1,124 @@
+==> gettext
+Compiling 1 file (.erl)
+Compiling 20 files (.ex)
+Generated gettext app
+===> Compiling ranch
+==> jason
+Compiling 8 files (.ex)
+Generated jason app
+==> earmark
+Compiling 3 files (.erl)
+Compiling 25 files (.ex)
+Generated earmark app
+==> article
+Compiling 3 files (.ex)
+Generated article app
+==> phoenix_pubsub
+Compiling 13 files (.ex)
+Generated phoenix_pubsub app
+==> fs_article_reader
+Compiling 3 files (.ex)
+warning: default arguments in list_file_recursivly/1 are never used
+  lib/article_reader.ex:29
+
+Generated fs_article_reader app
+===> Compiling cowlib
+===> Compiling cowboy
+==> mime
+Compiling 2 files (.ex)
+Generated mime app
+==> html_article
+Compiling 2 files (.ex)
+warning: redefining module MarkdownHtmlConverter (current version loaded from /home/thomas/Projects/bc/blog/web_writer/_build/prod/lib/article/ebin/Elixir.MarkdownHtmlConverter.beam)
+  lib/markdown_html_converter.ex:1
+
+Generated html_article app
+==> cached_article_repo
+Compiling 2 files (.ex)
+Generated cached_article_repo app
+==> plug_crypto
+Compiling 4 files (.ex)
+Generated plug_crypto app
+==> plug
+Compiling 1 file (.erl)
+Compiling 38 files (.ex)
+warning: System.stacktrace/0 outside of rescue/catch clauses is deprecated. If you want to support only Elixir v1.7+, you must access __STACKTRACE__ inside a rescue/catch. If you want to support earlier Elixir versions, move System.stacktrace/0 inside a rescue/catch
+  lib/plug/conn/wrapper_error.ex:23
+
+Generated plug app
+==> phoenix_html
+Compiling 8 files (.ex)
+Generated phoenix_html app
+==> plug_cowboy
+Compiling 5 files (.ex)
+Generated plug_cowboy app
+==> phoenix
+Compiling 67 files (.ex)
+Generated phoenix app
+==> web_writer
+Compiling 12 files (.ex)
+warning: variable "params" is unused (if the variable is not meant to be used, prefix it with an underscore)
+  lib/web_writer_web/controllers/page_controller.ex:12
+
+warning: variable "params" is unused (if the variable is not meant to be used, prefix it with an underscore)
+  lib/web_writer_web/controllers/page_controller.ex:19
+
+Generated web_writer app
+07:44:58.990 [info] Running WebWriterWeb.Endpoint with cowboy 2.6.1 at :::4001 (http)
+07:44:58.990 [error] Could not find static manifest at "/home/thomas/Projects/bc/blog/web_writer/_build/prod/lib/web_writer/priv/static/cache_manifest.json". Run "mix phx.digest" after building your static files or remove the configuration from "config/prod.exs".
+07:44:58.991 [info] Access WebWriterWeb.Endpoint at http://example.com
+07:45:27.600 request_id=2m6fl7f59uhel57a5g000jo7 [info] GET /
+07:45:27.604 request_id=2m6fl7f59uhel57a5g000jo7 [info] Sent 200 in 4ms
+07:45:32.507 request_id=2m6fl7o9puc51n9pq4000k71 [info] GET /new
+07:45:32.507 request_id=2m6fl7o9puc51n9pq4000k71 [info] Sent 200 in 368µs
+07:45:54.877 request_id=2m6fl91v4q8l8h7q8s000jp7 [info] POST /save
+07:45:54.895 request_id=2m6fl91v4q8l8h7q8s000jp7 [info] Sent 302 in 18ms
+07:45:54.899 request_id=2m6fl920ganlcvut64000k81 [info] GET /update/First%20article
+07:45:54.901 request_id=2m6fl920ganlcvut64000k81 [info] Sent 200 in 1ms
+07:47:04.925 [info] SIGTERM received - shutting down
+
+08:02:34.062 [info] Running WebWriterWeb.Endpoint with cowboy 2.6.1 at :::4001 (http)
+08:02:34.066 [error] Could not find static manifest at "/home/thomas/Projects/bc/blog/web_writer/_build/prod/lib/web_writer/priv/static/cache_manifest.json". Run "mix phx.digest" after building your static files or remove the configuration from "config/prod.exs".
+08:02:34.069 [info] Access WebWriterWeb.Endpoint at http://example.com
+08:02:42.205 request_id=2m6fn3m8h1aq3896l80000f1 [info] GET /
+08:02:42.242 request_id=2m6fn3m8h1aq3896l80000f1 [info] Sent 200 in 36ms
+08:03:26.082 [info] SIGTERM received - shutting down
+
+08:04:44.362 [info] Running WebWriterWeb.Endpoint with cowboy 2.6.1 at :::4001 (http)
+08:04:44.366 [error] Could not find static manifest at "/home/thomas/Projects/bc/blog/web_writer/_build/prod/lib/web_writer/priv/static/cache_manifest.json". Run "mix phx.digest" after building your static files or remove the configuration from "config/prod.exs".
+08:04:44.369 [info] Access WebWriterWeb.Endpoint at http://example.com
+08:04:59.852 request_id=2m6fnbmkum2quodf8o000002 [info] GET /update/First%20article
+08:04:59.987 request_id=2m6fnbmkum2quodf8o000002 [info] Sent 200 in 134ms
+08:05:01.089 request_id=2m6fnboun4bfbcc0kg000012 [info] GET /update/First%20article
+08:05:01.090 request_id=2m6fnboun4bfbcc0kg000012 [info] Sent 200 in 1ms
+08:05:07.192 [info] SIGTERM received - shutting down
+
+08:05:30.090 [info] Running WebWriterWeb.Endpoint with cowboy 2.6.1 at :::4001 (http)
+08:05:30.094 [error] Could not find static manifest at "/home/thomas/Projects/bc/blog/web_writer/_build/prod/lib/web_writer/priv/static/cache_manifest.json". Run "mix phx.digest" after building your static files or remove the configuration from "config/prod.exs".
+08:05:30.097 [info] Access WebWriterWeb.Endpoint at http://example.com
+08:05:34.508 request_id=2m6fndn6klst5896l80000c2 [info] GET /
+08:05:34.532 request_id=2m6fndn6klst5896l80000c2 [info] Sent 200 in 23ms
+08:05:34.564 [info] SIGTERM received - shutting down
+
+08:06:17.022 [info] Running WebWriterWeb.Endpoint with cowboy 2.6.1 at :::4001 (http)
+08:06:17.025 [error] Could not find static manifest at "/home/thomas/Projects/bc/blog/web_writer/_build/prod/lib/web_writer/priv/static/cache_manifest.json". Run "mix phx.digest" after building your static files or remove the configuration from "config/prod.exs".
+08:06:17.028 [info] Access WebWriterWeb.Endpoint at http://example.com
+08:06:21.382 request_id=2m6fngegge7gh896l8000004 [info] GET /
+08:06:21.405 request_id=2m6fngegge7gh896l8000004 [info] Sent 200 in 23ms
+08:06:21.434 [info] SIGTERM received - shutting down
+
+08:07:16.409 [info] Running WebWriterWeb.Endpoint with cowboy 2.6.1 at :::4001 (http)
+08:07:16.413 [error] Could not find static manifest at "/home/thomas/Projects/bc/blog/web_writer/_build/prod/lib/web_writer/priv/static/cache_manifest.json". Run "mix phx.digest" after building your static files or remove the configuration from "config/prod.exs".
+08:07:16.417 [info] Access WebWriterWeb.Endpoint at http://example.com
+08:07:20.815 request_id=2m6fnjt70e4ap896l8000073 [info] GET /
+08:07:20.829 request_id=2m6fnjt70e4ap896l8000073 [info] Sent 200 in 14ms
+08:07:20.855 [info] SIGTERM received - shutting down
+
+Compiling 1 file (.ex)
+08:09:31.261 [info] Running WebWriterWeb.Endpoint with cowboy 2.6.1 at :::4001 (http)
+08:09:31.265 [error] Could not find static manifest at "/home/thomas/Projects/bc/blog/web_writer/_build/prod/lib/web_writer/priv/static/cache_manifest.json". Run "mix phx.digest" after building your static files or remove the configuration from "config/prod.exs".
+08:09:31.268 [info] Access WebWriterWeb.Endpoint at http://example.com
+08:09:35.583 request_id=2m6fnro7qs0undkdrk000081 [info] GET /
+08:09:35.603 request_id=2m6fnro7qs0undkdrk000081 [info] Sent 200 in 19ms
+08:09:35.633 [info] SIGTERM received - shutting down
+

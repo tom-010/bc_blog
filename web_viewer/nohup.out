@@ -1,0 +1,106 @@
+07:44:21.386 [info] Running BlogWeb.Endpoint with cowboy 2.6.1 at http://example.com
+07:44:30.500 request_id=2m6fl44psb9f6odf8o000006 [info] GET /phoenix/live_reload/socket/websocket
+07:44:30.508 request_id=2m6fl44psb9f6odf8o000006 [info] Converted error Phoenix.Router.NoRouteError to 404 response
+07:44:30.515 request_id=2m6fl44psb9f6odf8o000006 [info] Sent 404 in 14ms
+07:44:42.346 request_id=2m6fl4qrvmgonnt2vs000055 [info] GET /phoenix/live_reload/socket/websocket
+07:44:42.346 request_id=2m6fl4qrvmgonnt2vs000055 [info] Converted error Phoenix.Router.NoRouteError to 404 response
+07:44:42.346 request_id=2m6fl4qrvmgonnt2vs000055 [info] Sent 404 in 254µs
+07:44:56.224 request_id=2m6fl5kn5rntlpd4n0000016 [info] GET /phoenix/live_reload/socket/websocket
+07:44:56.224 request_id=2m6fl5kn5rntlpd4n0000016 [info] Converted error Phoenix.Router.NoRouteError to 404 response
+07:44:56.224 request_id=2m6fl5kn5rntlpd4n0000016 [info] Sent 404 in 178µs
+07:45:06.405 request_id=2m6fl67m142b1p87fc000026 [info] GET /
+07:45:06.416 request_id=2m6fl67m142b1p87fc000026 [info] Sent 200 in 10ms
+07:45:08.449 request_id=2m6fl6bfqp6monb4jg000036 [info] GET /phoenix/live_reload/socket/websocket
+07:45:08.449 request_id=2m6fl6bfqp6monb4jg000036 [info] Converted error Phoenix.Router.NoRouteError to 404 response
+07:45:08.449 request_id=2m6fl6bfqp6monb4jg000036 [info] Sent 404 in 361µs
+07:45:12.060 request_id=2m6fl6i723cd164fn8000046 [info] GET /articles
+07:45:12.063 request_id=2m6fl6i723cd164fn8000046 [info] Sent 200 in 2ms
+07:45:18.894 request_id=2m6fl6uudl0tvg466s000056 [info] GET /phoenix/live_reload/socket/websocket
+07:45:18.894 request_id=2m6fl6uudl0tvg466s000056 [info] Converted error Phoenix.Router.NoRouteError to 404 response
+07:45:18.895 request_id=2m6fl6uudl0tvg466s000056 [info] Sent 404 in 492µs
+07:45:26.312 request_id=2m6fl7cohdcv5opaas000065 [info] GET /
+07:45:26.312 request_id=2m6fl7cohdcv5opaas000065 [info] Sent 200 in 151µs
+07:45:29.880 request_id=2m6fl7jd7v5ddf9gak000075 [info] GET /phoenix/live_reload/socket/websocket
+07:45:29.880 request_id=2m6fl7jd7v5ddf9gak000075 [info] Converted error Phoenix.Router.NoRouteError to 404 response
+07:45:29.880 request_id=2m6fl7jd7v5ddf9gak000075 [info] Sent 404 in 120µs
+07:45:41.328 request_id=2m6fl88njbbg7msujk000085 [info] GET /phoenix/live_reload/socket/websocket
+07:45:41.328 request_id=2m6fl88njbbg7msujk000085 [info] Converted error Phoenix.Router.NoRouteError to 404 response
+07:45:41.328 request_id=2m6fl88njbbg7msujk000085 [info] Sent 404 in 123µs
+07:45:52.539 request_id=2m6fl8tjpcj3qkp550000095 [info] GET /phoenix/live_reload/socket/websocket
+07:45:52.539 request_id=2m6fl8tjpcj3qkp550000095 [info] Converted error Phoenix.Router.NoRouteError to 404 response
+07:45:52.539 request_id=2m6fl8tjpcj3qkp550000095 [info] Sent 404 in 684µs
+07:45:58.697 request_id=2m6fl992s1tmovgrt8000066 [info] GET /articles
+07:45:58.813 request_id=2m6fl992s1tmovgrt8000066 [info] Sent 200 in 116ms
+07:46:03.927 request_id=2m6fl9iqjg3oc62fgg0000g1 [info] GET /article/first-article
+07:46:03.931 request_id=2m6fl9iqjg3oc62fgg0000g1 [info] Sent 200 in 3ms
+07:46:05.132 request_id=2m6fl9l2cvc8hjj48s0000h1 [info] GET /phoenix/live_reload/socket/websocket
+07:46:05.132 request_id=2m6fl9l2cvc8hjj48s0000h1 [info] Converted error Phoenix.Router.NoRouteError to 404 response
+07:46:05.132 request_id=2m6fl9l2cvc8hjj48s0000h1 [info] Sent 404 in 388µs
+07:46:19.574 request_id=2m6flafv7vjbalevv80000a5 [info] GET /phoenix/live_reload/socket/websocket
+07:46:19.574 request_id=2m6flafv7vjbalevv80000a5 [info] Converted error Phoenix.Router.NoRouteError to 404 response
+07:46:19.575 request_id=2m6flafv7vjbalevv80000a5 [info] Sent 404 in 181µs
+07:46:31.163 request_id=2m6flb5hvc64eh5bd8000004 [info] GET /phoenix/live_reload/socket/websocket
+07:46:31.163 request_id=2m6flb5hvc64eh5bd8000004 [info] Converted error Phoenix.Router.NoRouteError to 404 response
+07:46:31.163 request_id=2m6flb5hvc64eh5bd8000004 [info] Sent 404 in 429µs
+07:46:43.039 request_id=2m6flbrls7cs90otbg000014 [info] GET /phoenix/live_reload/socket/websocket
+07:46:43.040 request_id=2m6flbrls7cs90otbg000014 [info] Converted error Phoenix.Router.NoRouteError to 404 response
+07:46:43.040 request_id=2m6flbrls7cs90otbg000014 [info] Sent 404 in 192µs
+07:46:56.560 request_id=2m6flckro0hi62he48000024 [info] GET /phoenix/live_reload/socket/websocket
+07:46:56.560 request_id=2m6flckro0hi62he48000024 [info] Converted error Phoenix.Router.NoRouteError to 404 response
+07:46:56.560 request_id=2m6flckro0hi62he48000024 [info] Sent 404 in 154µs
+07:47:04.923 [info] SIGTERM received - shutting down
+
+08:02:34.055 [info] Running BlogWeb.Endpoint with cowboy 2.6.1 at http://example.com
+08:02:41.128 request_id=2m6fn3k8cd822odf8o0000g2 [info] GET /phoenix/live_reload/socket/websocket
+08:02:41.138 request_id=2m6fn3k8cd822odf8o0000g2 [info] Converted error Phoenix.Router.NoRouteError to 404 response
+08:02:41.145 request_id=2m6fn3k8cd822odf8o0000g2 [info] Sent 404 in 17ms
+08:02:42.143 request_id=2m6fn3m4tdt85nt2vs0000h2 [info] GET /
+08:02:42.149 request_id=2m6fn3m4tdt85nt2vs0000h2 [info] Sent 200 in 5ms
+08:02:53.067 request_id=2m6fn4ag1f6b5pd4n0000071 [info] GET /phoenix/live_reload/socket/websocket
+08:02:53.067 request_id=2m6fn4ag1f6b5pd4n0000071 [info] Converted error Phoenix.Router.NoRouteError to 404 response
+08:02:53.067 request_id=2m6fn4ag1f6b5pd4n0000071 [info] Sent 404 in 164µs
+08:03:05.258 request_id=2m6fn516m2ed1v6tso000081 [info] GET /phoenix/live_reload/socket/websocket
+08:03:05.259 request_id=2m6fn516m2ed1v6tso000081 [info] Converted error Phoenix.Router.NoRouteError to 404 response
+08:03:05.259 request_id=2m6fn516m2ed1v6tso000081 [info] Sent 404 in 389µs
+08:03:16.999 request_id=2m6fn5n2gejcfdkdrk0000i2 [info] GET /phoenix/live_reload/socket/websocket
+08:03:17.000 request_id=2m6fn5n2gejcfdkdrk0000i2 [info] Converted error Phoenix.Router.NoRouteError to 404 response
+08:03:17.000 request_id=2m6fn5n2gejcfdkdrk0000i2 [info] Sent 404 in 306µs
+08:03:26.081 [info] SIGTERM received - shutting down
+
+08:04:44.352 [info] Running BlogWeb.Endpoint with cowboy 2.6.1 at http://example.com
+08:04:54.280 request_id=2m6fnbc8qcj4qodf8o000001 [info] GET /phoenix/live_reload/socket/websocket
+08:04:54.288 request_id=2m6fnbc8qcj4qodf8o000001 [info] Converted error Phoenix.Router.NoRouteError to 404 response
+08:04:54.295 request_id=2m6fnbc8qcj4qodf8o000001 [info] Sent 404 in 15ms
+08:05:07.191 [info] SIGTERM received - shutting down
+
+08:05:30.096 [info] Running BlogWeb.Endpoint with cowboy 2.6.1 at http://example.com
+08:05:34.450 request_id=2m6fndn3534eaodf8o000064 [info] GET /
+08:05:34.464 request_id=2m6fndn3534eaodf8o000064 [info] Sent 200 in 14ms
+08:05:34.563 [info] SIGTERM received - shutting down
+
+08:05:52.404 [info] Running BlogWeb.Endpoint with cowboy 2.6.1 at http://example.com
+08:05:56.815 request_id=2m6fnf0o7lamuodf8o000005 [info] GET /
+08:05:56.830 request_id=2m6fnf0o7lamuodf8o000005 [info] Sent 200 in 14ms
+08:05:56.868 [info] SIGTERM received - shutting down
+
+08:06:17.025 [info] Running BlogWeb.Endpoint with cowboy 2.6.1 at http://example.com
+08:06:21.202 request_id=2m6fnge5q79haodf8o000054 [info] GET /phoenix/live_reload/socket/websocket
+08:06:21.210 request_id=2m6fnge5q79haodf8o000054 [info] Converted error Phoenix.Router.NoRouteError to 404 response
+08:06:21.217 request_id=2m6fnge5q79haodf8o000054 [info] Sent 404 in 14ms
+08:06:21.332 request_id=2m6fngedi2g75nt2vs000064 [info] GET /
+08:06:21.337 request_id=2m6fngedi2g75nt2vs000064 [info] Sent 200 in 5ms
+08:06:21.433 [info] SIGTERM received - shutting down
+
+08:07:16.407 [info] Running BlogWeb.Endpoint with cowboy 2.6.1 at http://example.com
+08:07:20.748 request_id=2m6fnjt30hmu8odf8o0000f2 [info] GET /
+08:07:20.766 request_id=2m6fnjt30hmu8odf8o0000f2 [info] Sent 200 in 17ms
+08:07:20.855 [info] SIGTERM received - shutting down
+
+08:09:31.168 [info] Running BlogWeb.Endpoint with cowboy 2.6.1 at http://example.com
+08:09:35.506 request_id=2m6fnro37snj6odf8o000045 [info] GET /
+08:09:35.526 request_id=2m6fnro4di8i1nt2vs000055 [info] GET /phoenix/live_reload/socket/websocket
+08:09:35.532 request_id=2m6fnro37snj6odf8o000045 [info] Sent 200 in 25ms
+08:09:35.534 request_id=2m6fnro4di8i1nt2vs000055 [info] Converted error Phoenix.Router.NoRouteError to 404 response
+08:09:35.539 request_id=2m6fnro4di8i1nt2vs000055 [info] Sent 404 in 13ms
+08:09:35.632 [info] SIGTERM received - shutting down
+

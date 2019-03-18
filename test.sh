@@ -13,5 +13,11 @@ for dir in * ; do
   fi
 done
 
+echo ===============================================
+echo "Testing starting and stopping of whole app"
+echo ===============================================
+
+./scripts/test_run_stop.sh || e=1
+
 exit $e
 
