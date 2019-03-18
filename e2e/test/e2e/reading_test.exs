@@ -24,7 +24,7 @@ defmodule E2e.ReadingTest do
         create_article("article 5", "category 2")
         
         start()
-        :timer.sleep(10000);
+        :timer.sleep(5000);
 
         {:ok, homepage} = HTTPoison.get("http://localhost:4000")
         assert homepage.body =~ "images/landmap" 
