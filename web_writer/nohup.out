@@ -122,3 +122,24 @@ Compiling 1 file (.ex)
 08:09:35.603 request_id=2m6fnro7qs0undkdrk000081 [info] Sent 200 in 19ms
 08:09:35.633 [info] SIGTERM received - shutting down
 
+Compiling 1 file (.ex)
+warning: variable "params" is unused (if the variable is not meant to be used, prefix it with an underscore)
+  lib/web_writer_web/controllers/page_controller.ex:12
+
+warning: variable "params" is unused (if the variable is not meant to be used, prefix it with an underscore)
+  lib/web_writer_web/controllers/page_controller.ex:25
+
+08:53:34.259 [info] Running WebWriterWeb.Endpoint with cowboy 2.6.1 at :::4001 (http)
+08:53:34.263 [error] Could not find static manifest at "/home/thomas/Projects/bc/blog/web_writer/_build/prod/lib/web_writer/priv/static/cache_manifest.json". Run "mix phx.digest" after building your static files or remove the configuration from "config/prod.exs".
+08:53:34.265 [info] Access WebWriterWeb.Endpoint at http://example.com
+08:53:38.510 request_id=2m6fslj2g14r3dkdrk000005 [info] GET /
+08:53:38.529 request_id=2m6fslj2g14r3dkdrk000005 [info] Sent 302 in 18ms
+08:53:38.557 [info] SIGTERM received - shutting down
+
+08:55:19.097 [info] Running WebWriterWeb.Endpoint with cowboy 2.6.1 at :::4001 (http)
+08:55:19.100 [error] Could not find static manifest at "/home/thomas/Projects/bc/blog/web_writer/_build/prod/lib/web_writer/priv/static/cache_manifest.json". Run "mix phx.digest" after building your static files or remove the configuration from "config/prod.exs".
+08:55:19.103 [info] Access WebWriterWeb.Endpoint at http://example.com
+08:55:23.491 request_id=2m6fsrmjrtqpf896l80000i1 [info] GET /
+08:55:23.508 request_id=2m6fsrmjrtqpf896l80000i1 [info] Sent 302 in 17ms
+08:55:23.544 [info] SIGTERM received - shutting down
+

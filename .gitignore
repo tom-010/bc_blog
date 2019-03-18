@@ -1,1 +1,4 @@
 ssh.sh
+*nohup.out*
+web_viewer/nohup.out
+web_writer/nohup.out
